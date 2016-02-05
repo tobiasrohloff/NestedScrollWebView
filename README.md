@@ -49,7 +49,8 @@ In your layout.xml include the following:
 <com.tobiasrohloff.view.NestedScrollWebView
             android:id="@+id/webView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"" />
 ```
 
 ## License
