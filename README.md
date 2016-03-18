@@ -55,6 +55,10 @@ In your layout.xml include the following:
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 ```
 
+## Known Issues
+
+Doesn't work well with `CollapsingToolbarLayout`, mainly tested with the regular `ToolbarLayout`.
+
 ## License
 
 <pre>
