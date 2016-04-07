@@ -8,19 +8,39 @@ The code is based on [this][7] and [this][8].
 
 ## Setup Instructions
 
-Set up the project dependencies. To use this library in your project, follow these steps:
+### (1) Using gradle
+
+* Add the JitPack repository to your root build.gradle at the end of repositories:
+
+```gradle
+allprojects {
+    repositories {
+        ...
+        maven { url "https://jitpack.io" }
+    }
+}
+```
+* In your application's main module (usually called "app"), edit your build.gradle to add a new dependency:
+```gradle
+dependencies {
+    compile 'com.github.rhlff:NestedScrollWebView:v1.0.2'
+}
+
+```
+
+### (2) Using git submodule
 
  * In the root of your application's project add the library as a git submodule:
 ```shell
 git submodule add https://github.com/rhlff/NestedScrollWebView
 ```
  * In the root of your application's project edit the file "settings.gradle" and add the following lines:
-```shell
+```gradle
 include ':NestedScrollWebView:lib'
 project(':NestedScrollWebView').projectDir = new File('/NestedScrollWebView')
 ```
  * In your application's main module (usually called "app"), edit your build.gradle to add a new dependency:
-```shell
+```gradle
  dependencies {
     ...
     compile project(':NestedScrollWebView:lib')
