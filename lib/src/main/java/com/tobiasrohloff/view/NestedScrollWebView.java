@@ -104,6 +104,7 @@ public class NestedScrollWebView extends WebView implements NestedScrollingChild
                 trackedEvent.recycle();
                 result = super.onTouchEvent(trackedEvent);
                 break;
+            case MotionEvent.ACTION_POINTER_DOWN:
             case MotionEvent.ACTION_UP:
             case MotionEvent.ACTION_CANCEL:
                 stopNestedScroll();
