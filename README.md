@@ -25,7 +25,7 @@ allprojects {
 * In your application's main module (usually called "app"), edit your build.gradle to add a new dependency:
 ```gradle
 dependencies {
-    compile 'com.github.rhlff:NestedScrollWebView:v1.1'
+    compile 'com.github.rhlff:NestedScrollWebView:v1.1.1'
 }
 
 ```
