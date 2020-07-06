@@ -8,9 +8,7 @@ The code is based on [this][7] and [this][8].
 
 ## Setup Instructions
 
-### (1) Using gradle
-
-[![](https://jitpack.io/v/tobiasrohloff/NestedScrollWebView.svg)](https://jitpack.io/#tobiasrohloff/NestedScrollWebView)
+### (1) Using gradle [![](https://jitpack.io/v/tobiasrohloff/NestedScrollWebView.svg)](https://jitpack.io/#tobiasrohloff/NestedScrollWebView)
 
 * Add the JitPack repository to your root build.gradle at the end of repositories:
 
@@ -25,7 +23,7 @@ allprojects {
 * In your application's main module (usually called "app"), edit your build.gradle to add a new dependency:
 ```gradle
 dependencies {
-    compile 'com.github.rhlff:NestedScrollWebView:v1.1.1'
+    implementation 'com.github.rhlff:NestedScrollWebView:v1.1.1'
 }
 
 ```
